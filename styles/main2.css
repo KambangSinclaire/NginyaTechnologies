@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville',
+        serif;
+}
+
+#brand-bar {
+    background-image: url("../images/background1.jpg");
+    background-repeat: no-repeat;
+    background-clip: inherit;
+    background-size: cover;
+    background-attachment: inherit;
+    height: fit-content;
+}
+
+.head-max {
+    font-weight: bold;
+    color: white;
+}
+
+.head-min {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.height {
+    min-height: 100vh;
+}
+
+.title-underline {
+    width: 150px;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.navbar-expand-sm {
+    background-color: transparent;
+}
+
+#navbarSection li {
+    border-right: 3px solid white;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.headerLink:hover {
+    text-decoration: none;
+}
+
+.headerLink {
+    display: block;
+    offset: 0px;
+    margin: 5rem 9rem auto 5rem;
+}
+
+
+#navbarSection li:hover {
+    background-color: black;
+    transition-duration: 0.8s;
+    transition-delay: 0s;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(14, 88, 39, 220);
+}
+
+
+.height-80 {
+    min-height: 80vh;
+}
+
+.about-picture {
+    background: url('../images/Bafousam1.JPG')center/cover no-repeat fixed;
+}
+
+#filler,
+#progress {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../images/Bg19.jpg')center/cover no-repeat fixed;
+}
+
+#header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../images/workspace0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-home {
+    background: url('../images/background.jpg') center/cover no-repeat fixed;
+}
+
+#review {
+    margin-top: 8%;
+}
+
+.missionStat {
+    font-weight: bolder;
+    font-size: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+.flip-box-inner {
+    /*position: relative;
+    */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    -webkit-transition: transform 0.9s;
+    -moz-transition: transform 0.9s;
+    -ms-transition: transform 0.9s;
+    -o-transition: transform 0.9s;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* 
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+} */
+
+.flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateX(180deg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+    padding: 4rem;
+    /* text-align: center; */
+    background: url("../images/church2.JPG")center/cover no-repeat fixed;
+    color: white;
+    font-size: 30px;
+}
+
+/* Page Content */
+.content {
+    padding: 20px;
+}
+
+.headerLink:hover {
+    text-decoration: none;
+
+}
+
+/*ANIMATIONS*/
+.logoImg {
+    position: relative;
+    -webkit-animation: mymove 4s infinite;
+    /*Safari4.0-8.0*/
+    -webkit-animation-timing-function: linear;
+    /*Safari4.0-8.0*/
+    animation: mymove 4s infinite;
+    animation-timing-function: linear;
+    height: 6rem;
+    width: 6rem;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {
+        left: 1%;
+    }
+
+    to {
+        left: 75%;
+    }
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 200px;
+    }
+}
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+.form-card {
+    background-color: cornflowerblue;
+}
+
+.testimony-of-week {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.testimony-of-week h3 {
+    font-weight: bolder;
+}
+
+.welcomeheader {
+    height: 20rem;
+}
+
+.pagehead {
+    width: 100%;
+    height: 5rem;
+    background-color: aquamarine;
+}
+
+.motto {
+    font-size: 2rem;
+    font-family: Lucida calligraphy;
+    color: gray;
+    padding-top: 1rem;
+}
+
+.aboutCompany {
+    border-radius: 10px;
+}
