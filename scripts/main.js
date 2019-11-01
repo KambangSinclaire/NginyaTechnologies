@@ -5,12 +5,12 @@ $(document).ready(() => {
 
     const header = ` <div class="container-fluid">
         <div class="row no-gutters container-fluid" id="brand-bar">
-            <div class="col-md-2">
-                <marquee direction="right" scrolldelay="85">
-                    <img src="./images/logo2.gif" width="110" height="70" class="img-fluid rounded-circle img-rounded" alt="logo">
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                <marquee direction="right" scrolldelay="85" class="container-fluid">
+                    <img src="./images/logo2.gif" width="85" height="85" class="img-fluid rounded-circle" alt="logo">
                 </marquee>
             </div>
-            <div class="col-md-10">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
                 <div class="container text-center text-dark py-2 welcomeheader">
                     <a href="./index.html" class="headerLink text-center">
                         <h1 class="text-uppercase head-max">
@@ -20,24 +20,15 @@ $(document).ready(() => {
                     </a>
                 </div>
             </div>
-            <!-- <div class="col-lg-1">
-                <marquee direction="right" scrolldelay="85">
-                    <img src="./images/LOGO2.JPG" class="img-thumbnail rounded-circle" alt="logo">
-                </marquee>
-            </div> -->
-
         </div>
     </div>
 
 
 
     <!-- NAVBAR HERE -->
-    <header id="navbarSection" class="container-fluid">
-        <nav class="navbar navbar-expand-lg justify-content-center text-capitalize text-white">
-            <a href="#" class="navbar-brand text-uppercase font-italic">
-                <!-- <img src="./images/LOGO2.JPG" class="img-fluid" alt="logo">
-                The church of Victory -->
-            </a>
+    <button id = "collapse-toggler" data-target="#menu-list" data-toggle="collapse" class="btn btn-info d-none">menu</button>
+    <header id="navbarSection" class="container-fluid collapse show sticky-top">
+        <nav id="menu-list" class="navbar navbar-expand-lg justify-content-center text-capitalize text-white">
             <ul class="navbar-nav mt-3 pagination pagination-lg">
                 <li class="nav-item mx-2">
                     <a href="index.html" class="nav-link btn navbar-btn text-white btn-lg px-4">
@@ -245,4 +236,18 @@ $(document).ready(() => {
 
     headerSection.innerHTML = header;
     footerSection.innerHTML = footer;
+
+
+    let doc_header = document.querySelectorAll("#navigationSection")[0];
+    let doc_header_bgColor = doc_header.style.backgroundColor;
+
+    document.body.onscroll = function(){
+        if (document.body.scrollHeight > 5) {
+            doc_header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        }
+        else{
+            doc_header.style = doc_header_bgColor; 
+        }
+    }
+
 });

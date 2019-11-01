@@ -2,13 +2,37 @@
 
 
 * {
-    box-sizing: border-box;
-    font-family: 'Libre Baskerville',
-        serif;
+    /* box-sizing: border-box; */
+    font-family: 'Libre Baskerville', serif;
 }
 
-#example img {
+#example img, #gallery-carousel img {
     height: 60vh;
+}
+@media screen and (max-width: 950){
+    #example img, #gallery-carousel img {
+        height: 45vh;
+    }
+}
+@media screen and (max-width: 700){
+    #example img, #gallery-carousel img {
+        height: 35vh;
+    }
+    #brand-bar{
+        height: auto;
+        min-height: fit-content;
+    }
+    #collapse-toggler{
+        display: block;
+    }
+}
+@media screen and (max-width: 450){
+    #example img, #gallery-carousel img {
+        height: 25vh;
+    }
+    #navigationSection{
+        display: none;
+    }
 }
 
 #brand-bar {
@@ -16,23 +40,40 @@
     background-repeat: no-repeat;
     background-clip: inherit;
     background-size: cover;
-    background-attachment: inherit;
     height: fit-content;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 2px solid white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    min-height: 7rem;
+}
+
+#brand-bar marquee{
+    width: 100%;
+    height: auto;
 }
 
 .head-max {
     font-weight: bold;
     color: white;
     font-size: 2rem;
+    overflow: hidden;
 }
 
 .head-min {
     font-style: italic;
     font-weight: bolder;
+    overflow: hidden;
 }
 
 .height {
-    min-height: 100vh;
+    height: fit-content;
+    margin: 2rem auto;
+}
+
+#header h1{
+    float: unset;
 }
 
 .title-underline {
@@ -59,7 +100,13 @@
 }
 
 #header {
-    background: url("../images/Bg18.jpg")center/cover no-repeat fixed;
+    background: url("../images/Bg18.jpg")center/cover no-repeat scroll;
+    width: 100%;
+}
+@media screen and (max-width: 500px){
+    #header h1{
+        font-size: x-large;
+    }
 }
 
 .bg-home {
@@ -132,17 +179,17 @@
 /* Style the body */
 body {
     font-family: Arial;
-    margin: 0;
+    width: 100%;
 }
 
 /* Header/Logo Title */
 .header {
-    padding: 4rem;
+    padding: 4rem auto;
     /* text-align: center; */
     background: url("../images/soft.jpg")center/cover no-repeat fixed;
     color: white;
     font-size: 30px;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -158,7 +205,8 @@ body {
 .headerLink {
     display: block;
     offset: 0px;
-    margin: 5rem 9rem auto 5rem;
+    justify-self: center;
+    align-self: center;
 }
 
 /*ANIMATIONS*/
@@ -195,7 +243,7 @@ body {
     }
 }
 
-
+/* 
 input[type=text],
 select,
 textarea {
@@ -223,7 +271,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
-}
+} */
 
 
 .col-25 {
@@ -254,37 +302,31 @@ input[type=submit]:hover {
         width: 100%;
         margin-top: 0;
     }
-}
-
-
-@media screen and (max-width: 600px) {
-
     .headerLink {
         display: inline;
         /* offset: 0px; */
         margin: 0 auto;
     }
+    #portfolio h1, #branches h1, #carousel h1, #footer h1, #brand-bar h1, #header h1{
+        font-size: x-large;
+        overflow: hidden;
+    }
 }
-
+@media screen and (max-width: 300px){
+    #portfolio h1, #branches h1, #carousel h1, #footer h1, #brand-bar h1, #header h1{
+        font-size: large;
+        overflow: hidden;
+    }
+}
 
 .form-card {
     background-color: cornflowerblue;
 }
 
-.testimony-of-week {
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.testimony-of-week h3 {
-    font-weight: bolder;
-}
-
 .welcomeheader {
-    height: 20rem;
+    height: auto;
+    justify-self: center;
+    justify-content: center;
 }
 
 .portfolio-icons {
@@ -311,14 +353,7 @@ input[type=submit]:hover {
     transition-timing-function: cubic-bezier(14, 88, 39, 220);
 }
 
-#header {
-    background: url("../images/image.jpg")no-repeat center;
-    width: 100%;
-    color: black;
-    margin-top: 2rem;
-}
-
 .bottomCarousel {
     background: url("../images/Image73.png") no-repeat center;
-    width: 100vw;
+    width: 100%;
 }
