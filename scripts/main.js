@@ -13,9 +13,9 @@ $(document).ready(() => {
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
                 <div class="container text-center text-dark py-2 welcomeheader">
                     <a href="./index.html" class="headerLink text-center">
-                        <h2 class="text-uppercase head-max">
+                        <h1 class="text-uppercase head-max">
                             Nginya Technologies
-                        </h2>
+                        </h1>
                         <h3 class="head-min text-warning text-capitalize">Creativity & impact</h3>
                     </a>
                 </div>

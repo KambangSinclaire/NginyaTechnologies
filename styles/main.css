@@ -305,6 +305,7 @@ input[type=submit]:hover {
     display: inline;
     /* offset: 0px; */
     margin: 0 auto;
+    padding: 1.5rem;
   }
   #portfolio h1,
   #branches h1,
