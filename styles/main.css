@@ -367,3 +367,6 @@ input[type=submit]:hover {
   background: url("../images/Image73.png") no-repeat center;
   width: 100%;
 }
+.ourQuote {
+  color: whitesmoke;
+}
