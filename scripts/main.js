@@ -13,9 +13,9 @@ $(document).ready(() => {
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
                 <div class="container text-center text-dark py-2 welcomeheader">
                     <a href="./index.html" class="headerLink text-center">
-                        <h1 class="text-uppercase head-max">
+                        <h2 class="text-uppercase head-max">
                             Nginya Technologies
-                        </h1>
+                        </h2>
                         <h3 class="head-min text-warning text-capitalize">Creativity & impact</h3>
                     </a>
                 </div>
@@ -55,7 +55,7 @@ $(document).ready(() => {
             <div class="row">
                 <div class="col text-center">
                     <h1 class="display-4 text-uppercase text-white mb-0">
-                        <strong>nginya</strong>
+                        <strong>ng-tech</strong>
                     </h1>
                     <div class="title-underline bg-primary"></div>
                     <p class="mt-2 text-capitalize text-muted">
@@ -100,8 +100,8 @@ $(document).ready(() => {
                             </h5>
                             <p class="small">
                                 We create sustainable mobile, desktop and web applications that
-                                cut accross every sphere of life 
-                                <p>We equally offer training for software development in the above mentioned areas</p>
+                                cut accross every sphere of life. Provide high quality graphics design and solutions to network related problems.
+                                We equally offer training for software development in the areas of mobile, web and desktop(Standalone Applications).
                             </p>
                         </div>
                         <div class="col-md-4 col-sm-4 text-center">
