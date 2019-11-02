@@ -100,9 +100,8 @@ $(document).ready(() => {
                             </h5>
                             <p class="small">
                                 We create sustainable mobile, desktop and web applications that
-                                cut accross every sphere of life (Education, Politics, Arts and
-                                Entertainment, science and engineering, family, business, etc.)
-                                <p>Offers training for software development in the above mentioned areas</p>
+                                cut accross every sphere of life 
+                                <p>We equally offer training for software development in the above mentioned areas</p>
                             </p>
                         </div>
                         <div class="col-md-4 col-sm-4 text-center">
