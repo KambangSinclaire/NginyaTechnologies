@@ -258,4 +258,44 @@ $(document).ready(() => {
         }
     }
 
+
+    //toggle view profile button
+
+    $('#sinclaire').click((event) => {
+        event.preventDefault();
+        const showInfo = document.querySelector(".sinclaire").classList.toggle("d-none");
+    });
+
+
+
+    $('#germanus').click((event) => {
+        event.preventDefault();
+        const showInfo = document.querySelector(".germanus").classList.toggle("d-none");
+    });
+
+
+    $('#nasah').click((event) => {
+        event.preventDefault();
+        const showInfo = document.querySelector(".nasah").classList.toggle("d-none");
+    });
+
+
+    $('#pastor').click((event) => {
+        event.preventDefault();
+        const showInfo = document.querySelector(".pastor").classList.toggle("d-none");
+    });
+
+    $('#lewis').click((event) => {
+        event.preventDefault();
+        const showInfo = document.querySelector(".lewis").classList.toggle("d-none");
+    });
+
+    $('#edwin').click((event) => {
+        event.preventDefault();
+        const showInfo = document.querySelector(".edwin").classList.toggle("d-none");
+    });
+
+
+
+
 });
