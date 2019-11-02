@@ -36,7 +36,7 @@ $(document).ready(() => {
                         Home </a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a href="aboutAP.html" target="blank" class="nav-link btn text-white btn-lg px-4">About</a>
+                    <a href="#branches" target="blank" class="nav-link btn text-white btn-lg px-4">About</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a href="#portfolio" class="nav-link btn text-white btn-lg px-4">Portfolio</a>
@@ -59,7 +59,7 @@ $(document).ready(() => {
                     </h1>
                     <div class="title-underline bg-primary"></div>
                     <p class="mt-2 text-capitalize text-muted">
-                        Lorem ipsum dolor sit amet.</p>
+                        Creativity and Impact</p>
                 </div>
             </div>
             <!-- End of footer Title row -->
@@ -102,7 +102,6 @@ $(document).ready(() => {
                                 We create sustainable mobile, desktop and web applications that
                                 cut accross every sphere of life (Education, Politics, Arts and
                                 Entertainment, science and engineering, family, business, etc.)
-                                which are easy to use as well as useful.
                                 <p>Offers training for software development in the above mentioned areas</p>
                             </p>
                         </div>
@@ -199,6 +198,15 @@ $(document).ready(() => {
                             </div>
                             <div class="col-75">
                                 <select id="country" name="country">
+                                    <option value="Cameroon">Cameroon</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="China">China</option>
+                                    <option value="China">China</option>
+                                    <option value="India">India</option>
+                                    <option value="India">India</option>
+                                    <option value="South Africa">South Africa</option>
                                     <option value="australia">Australia</option>
                                     <option value="canada">Canada</option>
                                     <option value="usa">USA</option>
@@ -241,12 +249,12 @@ $(document).ready(() => {
     let doc_header = document.querySelectorAll("#navigationSection")[0];
     let doc_header_bgColor = doc_header.style.backgroundColor;
 
-    document.body.onscroll = function(){
+    document.body.onscroll = function () {
         if (document.body.scrollHeight > 5) {
             doc_header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
         }
-        else{
-            doc_header.style = doc_header_bgColor; 
+        else {
+            doc_header.style = doc_header_bgColor;
         }
     }
 
